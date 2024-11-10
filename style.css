@@ -244,7 +244,50 @@ body{
 #page3{
     min-height: 100vh;
     width: 100%;
-    background-color: rgb(61,61, 61);
+    padding: 17vh 2vw;
+    position: relative;
+    margin-bottom: 20vh;
+}
+
+#page3 h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    position: relative;
+    margin-left: 28vw;
+}
+
+#page3 h1::before{
+    content:"02";
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: "silk serif";
+    left: -12%;
+    top: 8%;
+}
+
+#page3 .underline{
+    margin-left: 28vw;
+}
+
+#image-div-container{
+    background-color: red;
+    padding: 1vw;
+    position: relative;   
+}
+
+.image-div{
+    height: 33vw;
+    width: 24vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: center;
 }
 
 #page4{
@@ -457,3 +500,7 @@ body{
     font-weight: 500;
 }
 
+._canvas_container{
+    z-index: 999999 !important;
+    pointer-events: none;
+}
